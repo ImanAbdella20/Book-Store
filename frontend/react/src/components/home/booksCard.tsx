@@ -1,4 +1,3 @@
-
 import BooksSingleCard from './booksSingleCard';
 
 interface Book {
@@ -6,7 +5,12 @@ interface Book {
     title: string;
     author: string;
     publishYear: number;
-  }
+    coverImage: string;
+    price: number;
+    rating: number;
+    inStock: boolean;
+}
+
 interface BooksCardProps {
   books: Book[];
 }
